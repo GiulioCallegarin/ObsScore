@@ -120,6 +120,12 @@ public class ScoreUpdater{
                     }
                     FILE_PATH = file.getPath();
                     txtPath.setText(FILE_PATH);
+                    file = new File(FILE_PATH + "/dati");
+                    file.mkdirs();
+                    file = new File(FILE_PATH + "/punteggi");
+                    file.mkdirs();
+
+                    file = new File(FILE_PATH);
                 }
 
             }
