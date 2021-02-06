@@ -515,6 +515,7 @@ public class ScoreUpdater{
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("ScoreUpdater");
+        frame.setIconImage(new ImageIcon("res/logo.png").getImage());
         frame.setContentPane(new ScoreUpdater().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
